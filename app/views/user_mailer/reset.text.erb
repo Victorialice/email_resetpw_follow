@@ -1,0 +1,9 @@
+Dear <%= @user.name %>
+
+ please click the link to reset your password!
+puts "********************"
+ <%= @user.reset_code%>
+puts "********************"
+<%=link_to "password reset", :host => "localhost:3000", :controller => :retrieve, :action => :edit,
+	:reset_code=> @user.reset_code.to_s %>
+

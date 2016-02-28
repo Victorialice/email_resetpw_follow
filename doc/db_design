@@ -1,0 +1,7 @@
+rails generate scaffold User name:string password:digest email:string auth_code:string
+<%= f.hidden_field :auth_code, value:#{
+	Random.rand} %><br>
+}
+
+rails generate controller retrieve 
+
